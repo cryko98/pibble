@@ -26,7 +26,7 @@ const FloatingPibble: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-12 right-12 z-[100]">
+    <div className="fixed bottom-6 right-6 sm:bottom-12 sm:right-12 z-[100] hidden lg:block">
       <AnimatePresence>
         <motion.div 
           initial={{ opacity: 0, scale: 0, y: 20 }}
@@ -44,7 +44,7 @@ const FloatingPibble: React.FC = () => {
         whileHover={{ scale: 1.15, rotate: 5 }}
         whileTap={{ scale: 0.9, rotate: -10 }}
         onClick={handleBoop}
-        className="w-24 h-24 rounded-[2.5rem] border-[6px] border-white shadow-2xl overflow-hidden relative group"
+        className="w-20 h-20 sm:w-24 sm:h-24 rounded-[2.5rem] border-[6px] border-white shadow-2xl overflow-hidden relative group"
       >
         <div className="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity"></div>
         <img src={PIBBLE_LOGO_URL} alt="Pibble Floating" className="w-full h-full object-cover" />
