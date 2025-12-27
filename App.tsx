@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import TickerBar from './components/TickerBar';
 import About from './components/About';
 import HowToBuy from './components/HowToBuy';
 import MemoryGame from './components/MemoryGame';
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
+        <TickerBar />
         <About />
         <MemoryGame />
         <PibbleCatchGame />
